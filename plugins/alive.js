@@ -62,13 +62,13 @@ Module({
     }
   } 
   let cmdmenu = final.trim();
-  var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
+  var menu = `╭═══〘 ${BOT_INFO.split("mad")[0]} 〙═══⊷❍
 ┃${star}╭──────────────
 ┃${star}│
-┃${star}│ _*Owner*_ : ${BOT_INFO.split(";")[1]}
+┃${star}│ _*Owner*_ : ${BOT_INFO.split("mad")[1]}
 ┃${star}│ _*User*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
 ┃${star}│ _*Mode*_ : ${MODE}
-┃${star}│ _*Server*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
+┃${star}│ _*Server*_ : ${__dirname.startsWith('/skl')?:"Private (VPS)"}
 ┃${star}│ _*Available RAM*_ : ${used} of ${total}
 ┃${star}│ _*Version*_ : ${config.VERSION}
 ┃${star}│
